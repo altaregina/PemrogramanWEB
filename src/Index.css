@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00d8ff, 0 0 40px #00d8ff, 0 0 80px #00d8ff;
+  }
+  50% {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #00d8ff, 0 0 20px #00d8ff, 0 0 40px #00d8ff;
+  }
+}
+
+.neon-text {
+  animation: neon 1.5s infinite alternate;
+}
+
+.neon-text-hover:hover {
+  animation: neon 1.5s infinite alternate;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
